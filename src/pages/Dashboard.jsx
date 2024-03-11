@@ -9,11 +9,12 @@ function Dashboard() {
     try {
       const response = await fetch('http://localhost:3001/log');
       const data = await response.json();
-      setLog(data);
+      setLog(data.reverse()); // Reverse the data array before setting it in the state
     } catch (error) {
       console.error('Error fetching data:', error);
     }
   };
+  
 
   useEffect(() => {
     fetchLogData();
@@ -49,7 +50,7 @@ function Dashboard() {
           </thead>
           {/* body */}
           <tbody>
-            {log.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).reverse().map((entry, index) => (
+            {log.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).map((entry, index) => (
               <React.Fragment key={index}>
                 <tr>
                   <th>{index + 1}</th>
