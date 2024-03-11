@@ -1,0 +1,92 @@
+/* Dashboard.css */
+
+/* ต่อไปจะเป็นส่วนที่คุณปรับแต่งตามความต้องการของคุณ */
+
+.dashboard-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  background-color: #ffffff;
+  position: relative;
+  margin-top: 220px;
+  margin: 20px auto; /* Center the dashboard on larger screens */
+  position: relative;
+}
+
+.pagination-container {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: black;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #000;
+}
+
+/* Additional styles for responsiveness */
+
+/* Larger screens */
+@media screen and (min-width: 768px) {
+  .dashboard-container {
+      margin: 20px auto; /* Center the dashboard on larger screens */
+  }
+}
+
+/* Smaller screens */
+@media screen and (max-width: 767px) {
+  .dashboard-container {
+      padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  .data-table th,
+  .data-table td {
+      padding: 8px; /* Adjust cell padding on smaller screens */
+  }
+
+  .pagination {
+      margin-top: 15px;
+  }
+
+  .pagination button {
+      padding: 6px 12px; /* Adjust button padding on smaller screens */
+      font-size: 12px;
+  }
+}

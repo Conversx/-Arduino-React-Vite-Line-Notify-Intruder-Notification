@@ -1,0 +1,35 @@
+.btn-github,
+.btn-facebook,
+.btn-instagram {
+    transition: filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease; /* เพิ่ม transition เพื่อปรับ filter, transform, และ opacity */
+}
+
+.btn-github:hover {
+    filter: drop-shadow(0 0 10px rgba(123, 31, 162, 0.8));
+    transform: scale(1.1); /* ขยายขนาด 110% เมื่อ hover */
+    opacity: 0.8; /* ลดความโปร่งใสเล็กน้อยเมื่อ hover */
+}
+
+.btn-facebook:hover {
+    filter: drop-shadow(0 0 10px rgba(24, 119, 242, 0.8));
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.btn-instagram:hover {
+    filter: drop-shadow(0 0 10px rgba(236, 55, 122, 0.8));
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.card {
+  border: 3px solid white; /* เพิ่มกรอบสีขาวขนาด 3px */
+  border-radius: 8px; /* กรอบมีมุมโค้ง */
+  overflow: hidden; /* ให้ขอบมุมที่โค้งไม่แสดง */
+}
+
+.card {
+    border: 2px solid rgb(255, 255, 255); /* เพิ่มกรอบสีขาวขนาด 3px */
+    border-radius: 8px; /* กรอบมีมุมโค้ง */
+    overflow: hidden; /* ให้ขอบมุมที่โค้งไม่แสดง */
+  }

@@ -1,0 +1,84 @@
+/* AppStyles.css */
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 16px;
+  background-color: var(--base-100);
+  margin-top: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Additional styles for margin */
+.container {
+  margin: 0 auto;  /* Centers the navbar horizontally */
+}
+
+/* Navbar start styles */
+.navbar-start {
+  display: flex;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.btn-ghost {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu {
+  animation: fadeIn 0.3s ease;
+}
+
+/* Navbar center styles */
+.navbar-center {
+  /* Add your navbar-center styles here */
+}
+
+/* Navbar end styles */
+.navbar-end {
+  display: flex;
+}
+
+.btn-circle {
+  /* Add your btn-circle styles here */
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ใส่ transition สำหรับ dropdown content */
+.menu {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* เมื่อ dropdown content ปรากฏ */
+.menu-enter-active,
+.menu-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.menu-enter-done,
+.menu-exit-done {
+  opacity: 1;
+  transform: translateY(0);
+}
